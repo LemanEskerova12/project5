@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Cartoons</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: palevioletred;
+        }
+        .h1 {
+            display: flex;
+            color: whitesmoke;
+            height: 150px;
+            background-size: cover;
+            padding: 60px 0 0 40%;
+            font-family: 'Russo One', sans-serif;
+            background-image: url(https://wallpapers.com/images/hd/energetic-cartoon-network-characters-ls47umtnao9enr0q.jpg);
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .item {
+            padding: 40px 0 80px 40px;
+            width: 70%;
+            margin: 5px;
+            border: 3px solid black;
+            height: 90px;
+            box-shadow: 0 0 15px white;
+            transition: 1s;
+        }
+        .img1 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZjgxZDQ1NTAtYzcwZi00YTM0LWFjZjktMzhiZjk5NmRmMzQ1XkEyXkFqcGdeQXVyMjAwNzczNTU@._V1_.jpg);
+            background-size: cover;
+        }
+        .img2 {
+            background-image: url(https://m.media-amazon.com/images/I/811Mybc1zSL._AC_UF1000,1000_QL80_.jpg);
+            background-size: cover;
+            }
+        .img3 {
+            background-image: url(https://i.discogs.com/9dA5DyiWL49zmOvsR3cJM35u_wiOFeHS0xgKlRbRxqI/rs:fit/g:sm/q:90/h:807/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTIyODM1/MTctMTYyNDUzMDk1/Ni0xNzgyLmpwZWc.jpeg);
+            background-size: cover;
+        }
+        .img4 {
+            background-image: url(https://1.bp.blogspot.com/-aENXtenXThk/YVzEajKnD3I/AAAAAAAAUrY/Ot7DR-cG-AYz5MNJch2WhGP3ja5iXTihACLcBGAsYHQ/s1714/SK-Yay%25C4%25B1n-Posteri.jpg);
+            background-size: cover;
+        }
+        .img5 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/az/thumb/7/74/Qambolun_heyr%C9%99tamiz_d%C3%BCnyas%C4%B1.jpg/800px-Qambolun_heyr%C9%99tamiz_d%C3%BCnyas%C4%B1.jpg);
+            background-size: cover;
+        }
+        .img6 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/tr/0/01/RS_The_Movie.jpg);
+            background-size: cover;
+        }
+        .img7 {
+            background-image: url(https://b6s54eznn8xq.merlincdn.net/Uploads/Films/masa-ile-koca-ayi-sirinler-koyunde-2023123153521.jpg);
+            background-size: cover;
+        }
+        .img8 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Tom_and_Jerry_Cowboy_Up.png/220px-Tom_and_Jerry_Cowboy_Up.png);
+            background-size: cover;
+        }
+        .img9 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZjg2ZjViMTktNWQ1Yy00ODZiLWE1OTgtNDY3MjI0OGUyNjNhXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_.jpg);
+            background-size: cover;
+        }
+        .img10 {
+            background-image: url(https://www.pokemon.com/static-assets/app/static3/img/og-default-image.jpeg);
+            background-size: cover;
+        }
+        .img11 {
+            background-image: url(https://cdn.bubilet.com.tr/files/Etkinlik/pijamaskeliler-kayip-oyuncaklar-muzikali-49380.jpg);
+            background-size: cover;
+        }
+        .img12 {
+            background-image: url(https://pics.filmaffinity.com/Winnie_the_Pooh-714467957-large.jpg);
+            background-size: cover;
+        }
+        .img13 {
+            background-image: url(https://image.winudf.com/v2/image/Y29tLnV6enkuZ2FtZXMucGVwZXlhcGJvem95dW51X3NjcmVlbnNob3RzXzBfNzE1YWJjZQ/screen-0.webp?fakeurl=1&type=.webp);
+            background-size: cover;
+        }
+        .img14 {
+            background-image: url(https://images.justwatch.com/poster/304523615/s718/esrarengiz-kasaba.%7Bformat%7D);
+            background-size: cover;
+        }
+        .img15 {
+            background-image: url(https://images.justwatch.com/poster/254525797/s592/mucize-ugur-bocegi-ile-kara-kedi);
+            background-size: cover;
+        }
+        .img16 {
+            background-image: url(https://tr.web.img2.acsta.net/pictures/15/03/17/15/39/152362.jpg);
+            background-size: cover;
+        }
+        @media(max-width: 550px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .item {
+                height: 80px;
+                margin: 5px auto;
+                box-shadow: 0 0 15px white;
+                transition: 1s;
+            }
+        }
+        .b {
+            display: flex;
+            color: whitesmoke;
+            height: 150px;
+            background-size: cover;
+            padding: 60px 0 0 40%;
+            font-family: 'Russo One', sans-serif;
+            background-image: url(https://wallpapers.com/images/hd/energetic-cartoon-network-characters-ls47umtnao9enr0q.jpg);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .item:hover {
+            box-shadow: 0 0 5px rgb(251, 255, 255),
+                0 0 25px rgb(250, 252, 252),
+                0 0 50px rgb(245, 247, 247),
+                0 0 100px rgb(250, 252, 252);
+            scale: 1.1;
+        }
+        .footer {
+            position: fixed;
+            line-height: 25px;
+            text-align: center;
+            background-color: rgb(41, 41, 99);
+            color: rgb(253, 252, 252);
+            width: 100%;
+            bottom: 0;
+            font-size: 10px;
+            z-index: 2;
+            scale: 1;
+        }
+        .foot {
+            width: 100%;
+            height: 210px;
+            background-image: url(https://i.pinimg.com/originals/79/1f/46/791f46151c2f834ca3ae77075209d867.png);
+            color: wheat;
+            background-size: cover;
+            text-align: center;
+        }
+        #foot1 {
+            color: rgb(255, 254, 254);
+            width: 100%;
+            height: 40px;
+        }
+
+        #foot3 {
+            color: rgb(247, 246, 246);
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #foot2 {
+            color: rgb(247, 245, 245);
+            width: 100%;
+            height: 50px;
+        }
+
+        #foot4 {
+            color: rgb(248, 244, 244);
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="h1"><h1>Cartoons</h1></div>
+    <div class="flex-container">
+        <div class="item img1"><a href="https://youtu.be/ACTyFz2H57U"></a></div>
+        <div class="item img2"></div>
+        <div class="item img3"></div>
+        <div class="item img4"></div>
+        <div class="item img5"></div>
+        <div class="item img6"></div>
+        <div class="item img7"></div>
+        <div class="item img8"></div>
+    </div>
+    <p>
+        <div class="flex-container">
+            <div class="item img9"><a href="https://youtu.be/ACTyFz2H57U">.</a></div>
+            <div class="item img10"></div>
+            <div class="item img11"></div>
+            <div class="item img12"></div>
+            <div class="item img13"></div>
+            <div class="item img14"></div>
+            <div class="item img15"></div>
+            <div class="item img16"></div>
+        </div>
+    </p>
+    <div class="container">
+        <div class="foot">
+            <h1 id="foot1">Email</h1>
+            <p id="foot3">eskerovaleman6@gmail.com</p>
+            <h1 id="foot2">Number</h1>
+            <p id="foot4">+994 55 421 29 07</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Design by Eskerova Leman</h1>
+        <h1> © 2023</h1>
+    </div>
+</body>
+</html>
